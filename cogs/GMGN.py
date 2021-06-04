@@ -8,6 +8,7 @@ class GMGN(commands.Cog):
     async def gm(self, ctx):
         await ctx.send(f'<@{ctx.author.id}> wünscht allen einen guten Morgen!')
 
+
     @commands.command()
     async def gn(self, ctx):
         await ctx.send(f'<@{ctx.author.id}> wünscht allen eine gute Nacht!')

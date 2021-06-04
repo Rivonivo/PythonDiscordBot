@@ -7,7 +7,11 @@ class helpCommand(commands.Cog):
     @commands.command()
     async def help(self, ctx):
         em = discord.Embed(title=f'Help',
-                           description=f'`!help` - Zeigt diese Hilfe an!\n',
+                           description=f'`!help` - Zeigt diese Hilfe an!\n'
+                                       f'`!clear <count>` - Löscht Nachrichten beliebig(Clear Rolle erforderlich)\n'
+                                       f'`!ping` - Zeigt deine Latenz von dir bis zum Host an!\n'
+                                       f'`!gm/!gn` - Ihr wünscht allen eine/n gute/n Morgen/Nacht!\n'
+                                        f'`!meme` - Zeigt ein Meme an',
                            color=0x30DF40)
         em.set_footer(text=f'Angefordert von {ctx.author.name}',
                       icon_url=ctx.author.avatar_url)
